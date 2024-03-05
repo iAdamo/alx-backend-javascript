@@ -1,3 +1,7 @@
+/*
+ * Run "npm run dev maintest/0-main.js" to test
+*/
+
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
