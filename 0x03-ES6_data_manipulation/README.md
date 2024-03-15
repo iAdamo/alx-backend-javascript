@@ -1,5 +1,5 @@
-### ES6 classes
-**`OOP`** **`JavaScript`** **`ES6`**
+### ES6 Basics
+**`JavaScript`** **`ES6`**
 
 #### Setup
 ##### Install NodeJS 12.11.x
