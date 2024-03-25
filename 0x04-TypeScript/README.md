@@ -116,7 +116,7 @@ module.exports = {
 Run `npm install` to get all the dependencies installed.
 
 ### Tasks
-0) **Creating an interface for a student**
+0) ### **Creating an interface for a student**
 
 Copy the following configuration files (provided above) into the task_0 directory: `package.json`, `.eslintrc.js`, `tsconfig.json`, `webpack.config.js`
 
@@ -130,3 +130,57 @@ Requirements:
 
 - When running, Webpack should return `No type errors found`.
 - Every variable should use TypeScript when possible.
+
+1) #### **Let's build a Teacher interface**
+
+Create a directory `task_1` and copy these configuration files into this folder: `package.json`, `tsconfig.json`, `webpack.config.js`
+
+- `firstName(string)` and `lastName(string)`. These two attributes should only be modifiable when a Teacher is first initialized
+- `fullTimeEmployee(boolean)` this attribute should always be defined
+- `yearsOfExperience(number)` this attribute is optional
+- `location(string)` this attribute should always be defined
+- Add the possibility to add any attribute to the Object like `contract(boolean)` without specifying the name of the attribute
+Example:
+```typescript
+const teacher3: Teacher = {
+  firstName: 'John',
+  fullTimeEmployee: false,
+  lastName: 'Doe',
+  location: 'London',
+  contract: false,
+};
+
+console.log(teacher3);
+
+// should print
+// Object
+// contract: false
+// firstName: "John"
+// fullTimeEmployee: false
+// lastName: "Doe"
+// location: "London"
+```
+
+2) ### **Extending the Teacher class**
+
+Write an interface named `Directors` that extends `Teacher`. It requires an attribute named `numberOfReports(number)`
+
+Example:
+```typescript
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+console.log(director1);
+
+// should print
+// Object
+// firstName: "John"
+// fullTimeEmployee: true
+// lastName: "Doe"
+// location: "London"
+// numberOfReports: 17
+```
