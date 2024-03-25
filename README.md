@@ -8,6 +8,7 @@ This repository contains projects and exercises that cover the following topics:
 - [ES6_Promises](https://github.com/iAdamo/alx-backend-javascript/tree/main/0x01-ES6_promise)
 - [ES6 classes](https://github.com/iAdamo/alx-backend-javascript/tree/main/0x02-ES6_classes)
 - [ES6 data manipulation](https://github.com/iAdamo/alx-backend-javascript/tree/main/0x03-ES6_data_manipulation)
+- [TypeScript](https://github.com/iAdamo/alx-backend-javascript/tree/main/0x04-TypeScript)
 
 
 #### **`NOTE`**: For mostly all programs, you will find a `maintest` directory which contains files for testing each programs respectively as they are being numbered.e.g:
