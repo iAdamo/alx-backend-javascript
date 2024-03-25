@@ -77,6 +77,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: './js/main.ts',
   devtool: 'inline-source-map',
   module: {
@@ -85,7 +86,7 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         options: {
-          transpileOnly: true,
+          transpileOnly: false,
         },
       },
     ],
@@ -94,7 +95,9 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin(),
@@ -111,3 +114,19 @@ module.exports = {
 ```
 
 Run `npm install` to get all the dependencies installed.
+
+### Tasks
+0) **Creating an interface for a student**
+
+Copy the following configuration files (provided above) into the task_0 directory: `package.json`, `.eslintrc.js`, `tsconfig.json`, `webpack.config.js`
+
+Write your code in the main.ts file:
+
+- Write an interface named Student that accepts the following elements: ``firstName(string)`, `lastName(string)`, `age(number)`, and `location(string)`
+- Create two students, and create an array named `studentsList` containing the two variables
+- Using Vanilla Javascript, render a table and for each elements in the array, append a new row to the table
+- Each row should contain the first name of the student and the location
+Requirements:
+
+- When running, Webpack should return `No type errors found`.
+- Every variable should use TypeScript when possible.
