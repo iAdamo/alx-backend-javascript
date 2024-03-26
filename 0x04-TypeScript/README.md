@@ -113,16 +113,16 @@ module.exports = {
 };
 ```
 
-Run `npm install` to get all the dependencies installed.
+run `npm install` to get all the dependencies installed.
 
-Run `npm run build` to transpile the `main.ts` file to JavaScript and index.html file which will be saved in the `dist/` directory.
+run `npm run build` to transpile the `main.ts` file to JavaScript and index.html file which will be saved in the `dist/` directory.
 
-Run `npm run start-dev` to start the web server on your local machine then renders the generated `dist/index.html`
+run `npm run start-dev` to start the web server on your local machine then renders the generated `dist/index.html`
 
-Run `npm run test` to run a typescript eslint
+run `npm run test` to run a typescript eslint
 
 ### Tasks
-0) ### **Creating an interface for a student**
+0) **Creating an interface for a student**
 
 Copy the following configuration files (provided above) into the task_0 directory: `package.json`, `.eslintrc.js`, `tsconfig.json`, `webpack.config.js`
 
@@ -137,7 +137,7 @@ Requirements:
 - When running, Webpack should return `No type errors found`.
 - Every variable should use TypeScript when possible.
 
-1) #### **Let's build a Teacher interface**
+1) **Let's build a Teacher interface**
 
 Create a directory `task_1` and copy these configuration files into this folder: `package.json`, `tsconfig.json`, `webpack.config.js`
 
@@ -167,7 +167,7 @@ console.log(teacher3);
 // location: "London"
 ```
 
-2) ### **Extending the Teacher class**
+2) **Extending the Teacher class**
 
 Write an interface named `Directors` that extends `Teacher`. It requires an attribute named `numberOfReports(number)`
 
@@ -191,7 +191,7 @@ console.log(director1);
 // numberOfReports: 17
 ```
 
-3) #### **Printing teachers**
+3) **Printing teachers**
 
 Write a function `printTeacher`:
 
