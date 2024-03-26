@@ -1,7 +1,7 @@
 ### Typescript
 **`JavaScript`** **`TypeScript`**
 
-### Configuration Files
+### Configuration
 Please use these files for the following tasks
 
 #### **package.json**
@@ -114,6 +114,12 @@ module.exports = {
 ```
 
 Run `npm install` to get all the dependencies installed.
+
+Run `npm run build` to transpile the `main.ts` file to JavaScript and index.html file which will be saved in the `dist/` directory.
+
+Run `npm run start-dev` to start the web server on your local machine then renders the generated `dist/index.html`
+
+Run `npm run test` to run a typescript eslint
 
 ### Tasks
 0) ### **Creating an interface for a student**
