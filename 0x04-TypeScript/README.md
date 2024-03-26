@@ -114,9 +114,12 @@ module.exports = {
 ```
 
 Run `npm install` to get all the dependencies installed.
+Run `npm run start-dev` to start the server.
+Run `npm run build` to build the project.
+Run `npm run test` to run the tests.
 
 ### Tasks
-0) ### **Creating an interface for a student**
+0) **Creating an interface for a student**
 
 Copy the following configuration files (provided above) into the task_0 directory: `package.json`, `.eslintrc.js`, `tsconfig.json`, `webpack.config.js`
 
@@ -131,7 +134,7 @@ Requirements:
 - When running, Webpack should return `No type errors found`.
 - Every variable should use TypeScript when possible.
 
-1) #### **Let's build a Teacher interface**
+1) **Let's build a Teacher interface**
 
 Create a directory `task_1` and copy these configuration files into this folder: `package.json`, `tsconfig.json`, `webpack.config.js`
 
@@ -185,7 +188,7 @@ console.log(director1);
 // numberOfReports: 17
 ```
 
-3) #### **Printing teachers**
+3) **Printing teachers**
 
 Write a function `printTeacher`:
 
